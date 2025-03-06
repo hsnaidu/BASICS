@@ -4,10 +4,10 @@ This folder contains all the fundamental elements and key concepts I've learned 
 
 ## 🗂️ Folder Structure
 
-Basics/
-├── Git/ # 📂 Git basics and commands
-├── Python/ # 🐍 Python basics and examples
-└── MongoDB/ # 🍃 MongoDB basics and operations
+Basics/            
+-> Git -- 📂 Git basics and commands              
+-> Python -- 🐍 Python basics and examples         
+-> MongoDB -- 🍃 MongoDB basics and operations         
 
 ## 🛠️ Topics Covered
 

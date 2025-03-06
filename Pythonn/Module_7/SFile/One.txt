@@ -1,3 +1,0 @@
-Hi my name is HARIII
-I am based out of bangalore 
-This is a test file for seeing how files works in PYTHON

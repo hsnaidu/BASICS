@@ -7,7 +7,8 @@ This folder contains all the fundamental elements and key concepts I've learned 
 Basics/            
 -> Git -- 📂 Git basics and commands              
 -> Python -- 🐍 Python basics and examples         
--> MongoDB -- 🍃 MongoDB basics and operations         
+-> MongoDB -- 🍃 MongoDB basics and operations  
+-> Statistics -- 📚 Main Statistics Basics
 
 ## 🛠️ Topics Covered
 

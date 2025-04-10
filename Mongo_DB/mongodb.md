@@ -121,3 +121,52 @@ Example:
 ```
 
 ---
+## 🔄 Update & Replace
+
+### 🧾 Replace Entire Document (⚠️ Must Include All Fields!)
+
+```javascript
+db.<collection>.replaceOne({_id: ObjectId()}, {name: "New Name"})
+```
+
+### ✏️ Update Fields
+
+```javascript
+// Replace or add field
+db.<collection>.updateOne({_id: ObjectId()}, {$set: {field: "value"}})
+
+// Push to an array
+db.<collection>.updateOne({_id: ObjectId()}, {$push: {skills: "MongoDB"}})
+
+---
+
+## 🗑️ Delete Documents
+
+```javascript
+db.<collection>.deleteOne({_id: ObjectId()})                   // Delete single
+db.<collection>.deleteMany({category: "crime"})                // Delete multiple
+```
+
+---
+
+## 📊 Sorting & Limiting
+
+```javascript
+// Sort by name (1 = asc, -1 = desc)
+db.users.find().sort({name: 1})
+
+// Limit results to 3
+db.users.find().limit(3)
+
+// Sort + limit + project specific fields
+db.users.find({}, {name: 1}).sort({name: -1}).limit(3)
+```
+
+---
+## 🔁 Recovery Notes
+
+- MongoDB standalone instances **do not have replica sets**, so recovery is limited.
+- To restore data:
+  [Restore Guide](https://www.mongodb.com/docs/ops-manager/current/tutorial/restore-single-database/)
+
+---

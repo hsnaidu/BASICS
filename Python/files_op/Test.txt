@@ -1,0 +1,3 @@
+Hi everyone
+we are learning FILES using Python
+I like to code in python

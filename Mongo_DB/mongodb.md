@@ -60,3 +60,64 @@ db.<collection>.insertMany([{...}, {...}, {...}])  // Insert multiple docs
 ```
 
 ---
+
+## 🔍 Query Documents
+
+### 📃 Basic Find
+
+```javascript
+db.<collection>.find({})                          // Get all documents
+db.<collection>.find({name: "Alice"})             // Filter by field
+db.<collection>.findOne({name: "Alice"})          // Return only one document
+```
+
+### 🔎 Filters and Projections
+
+```javascript
+db.users.find({name: {$eq: "Hari"}}, {password: 1})   // Filter + project only password
+```
+
+---
+
+## 🔢 Comparison Operators
+
+| Operator | Use                          |
+|----------|------------------------------|
+| `$eq`    | Equal                        |
+| `$gt`    | Greater than                 |
+| `$lt`    | Less than                    |
+| `$gte`   | Greater than or equal        |
+| `$lte`   | Less than or equal           |
+
+```javascript
+db.users.find({salary: {$gt: 5000}})
+```
+
+---
+
+## ⚙️ Logical Operators
+
+```javascript
+db.users.find({$and: [{name: "Hari"}, {age: 20}]})
+db.users.find({$or: [{name: "Hari"}, {name: "Hemanth"}]})
+```
+
+---
+
+## 📚 Arrays & `$in` Operator
+
+```javascript
+db.users.find({tags: {$in: ["developer", "designer"]}})
+```
+
+Example:
+
+```json
+{
+  "_id": 1,
+  "name": "Alice",
+  "tags": ["developer", "designer"]
+}
+```
+
+---

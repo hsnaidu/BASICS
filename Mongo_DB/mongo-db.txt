@@ -1,0 +1,67 @@
+# Complete Mongo-DB Cheat-Sheet
+---------------------------------------------------------------------------------------------------
+
+1. Mongo-DB is an unstructured database
+
+2. Mongo-DB is very simple to learn, and uses JSON format for CRUD methods
+
+3. Mongo-DB are used in almost very applications today, specially when you have unstructured data.
+
+---------------------------------------------------------------------------------------------------
+
+* Mongo-DB can be accessed via :
+
+1. MONGOSH (cmd)
+
+2. MONGO-DB Compass (UI)
+
+---------------------------------------------------------------------------------------------------
+
+PRE : 
+
+Collection -> Table
+Database has a Bunch of Collections -> DB Consist a Group of Table 
+
+
+1.  TO VIEW ALL THE DATA-BASE
+
+# show dbs
+
+2.  TO VIEW ALL THE COLLECTIONS
+
+# show collections
+
+3. TO DROP THE DATABASE 
+
+use <db-name>
+db.dropDatabase() -- Del the database
+
+4. TO DROP A COLLECTION (TABLE)
+
+use <db-name>
+show collections
+db.<Collection-Name>.drop()
+
+5. TO CREATE A COLLECTION (TABLE)
+use <db-name>
+db.createCollection("<collection-name">)
+
+# OR
+<Just pass the query method>
+
+db.<database-name>.insertOne("<collection-name>")
+
+---------------------------------------------------------------------------------------------------
+
+# IF YOU DELETE THE COLLECTION OR DATABASE
+
+# TO RESTORE THE DELETED COLLECTIONS OR DATABASE
+
+# https://www.mongodb.com/docs/ops-manager/current/tutorial/restore-single-database/
+
+# BUT WITH STAND-ALONE IT WONT CREATE ANY REPLICA OF THE SET SO DATA IS DOOMED :(
+
+---------------------------------------------------------------------------------------------------
+
+ADDING ELEMENTS INTO THE COLLECTION
+
